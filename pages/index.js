@@ -1,5 +1,5 @@
-import { Box, Button, Center, Flex, Text, List, ListItem, ListIcon, Container } from "@chakra-ui/react";
-import { CheckCircleIcon } from '@chakra-ui/icons'
+import { Box, Button, Center, Flex, Text, List, ListItem, ListIcon, Container, Stack } from "@chakra-ui/react";
+import { CheckCircleIcon, StarIcon } from '@chakra-ui/icons'
 
 export default function Home() {
   return (
@@ -7,22 +7,22 @@ export default function Home() {
     <Container maxW={'100%'}>
       <Box height={'397px'} backgroundColor={'#6B46C1'}>
         <Center>
-          <Text fontSize={'48px'} color={'#F7FAFC'} fontWeight={'bold'} marginTop={'88px'}>Simple pricing for your business</Text>
+          <Text fontSize={{ base: '24px', "md": '24px', "lg": '48px' }} color={'#F7FAFC'} fontWeight={'bold'} marginTop={'88px'}>Simple pricing for your business</Text>
         </Center>
         <Center>
-          <Text fontSize={'24px'} color={'#F7FAFC'} opacity={'0.9'} marginTop={'10px'}>Plans that are carefully crafted to suit your business</Text>
+          <Text fontSize={{ base: '16px', "md": '24px', "lg": '24px' }} color={'#F7FAFC'} opacity={'0.9'} marginTop={'10px'}>Plans that are carefully crafted to suit your business</Text>
         </Center>
         <Center>
-          <Flex marginTop={'55px'} height={'336px'} wrap={'wrap'}>
+          <Flex marginTop={'55px'} height={'336px'} flexDirection={{ base: "column", lg: "row" }}>
             <Box width={'378px'} backgroundColor={'#f0eafb'} borderTopLeftRadius={'lg'} borderBottomLeftRadius={'lg'} boxShadow={'lg'}>
               <Text fontSize={'24px'} fontWeight={'bold'} textAlign={'center'} marginTop={'57px'}>Premium PRO</Text>
               <Text fontSize={'60px'} fontWeight={'bold'} textAlign={'center'}>$329</Text>
               <Text fontSize={'18px'} textAlign={'center'} fontWeight={'semibold'}>billed just once</Text>
               <Center>
-                <Button width={'282px'} borderRadius={'md'} backgroundColor={'#805AD5'} color={'white'} marginTop={'10px'}>Get Started</Button>
+                <Button width={{ base: '141px', lg: '282px' }} borderRadius={'md'} backgroundColor={'#805AD5'} color={'white'} marginTop={'10px'} marginBottom={{ base: '20px' }}>Get Started</Button>
               </Center>
             </Box>
-            <Box width={'616px'} backgroundColor={'white'} borderTopRightRadius={'lg'} borderBottomRightRadius={'lg'} boxShadow={'lg'}>
+            <Box width={{ base: '377px', lg: '616px' }} backgroundColor={'white'} borderTopRightRadius={'lg'} borderBottomRightRadius={'lg'} boxShadow={'lg'}>
               <Text fontSize={'18px'} margin={'48px 48px 24px 48px'}>Access these features when you get this pricing package for your business</Text>
               <List spacing={3} margin={'24px 48px 24px 48px'}>
                 <ListItem>
